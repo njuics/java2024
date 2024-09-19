@@ -136,7 +136,7 @@
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="13" data-paginate="true" data-background-color="#fff" data-theme="gaia" lang="zh-CN" data-marpit-pagination="13" style="--paginate:true;--background-color:#fff;--theme:gaia;background-color:#fff;background-image:none;" data-marpit-pagination-total="65">
 <h1 id="%E5%88%9D%E5%A7%8B%E5%8C%96%E9%A1%BA%E5%BA%8F">初始化顺序</h1>
-<p>在类中变量定义的顺序决定了它们初始化的顺序。即使变量定义散布在方法定义之间，它们仍会在任何方法（包括构造器）被调用之前得到初始化。</p>
+<p>在类中变量定义的顺序决定了它们初始化的顺序。即使变量定义散布在方法定义之间，它们仍会在任何方法（含构造器）被调用之前初始化。</p>
 <pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-java"><span class="hljs-keyword">class</span> <span class="hljs-title class_">Window</span> {
     Window(<span class="hljs-type">int</span> marker) {  System.out.println(<span class="hljs-string">&quot;Window(&quot;</span> + marker + <span class="hljs-string">&quot;)&quot;</span>); }
 }
@@ -634,7 +634,6 @@ you.eat(); <span class="hljs-comment">//??</span>
 <h2 id="%E5%86%8D%E7%9C%8B%E4%B8%80%E4%B8%AA%E4%BE%8B%E5%AD%90">再看一个例子</h2>
 <pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-java"><span class="hljs-keyword">class</span> <span class="hljs-title class_">Shape</span>{  
     <span class="hljs-keyword">private</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">draw</span><span class="hljs-params">()</span>{ System.out.println(<span class="hljs-string">&quot;Draw Shape&quot;</span>); }  
-      
     <span class="hljs-keyword">void</span> <span class="hljs-title function_">show</span><span class="hljs-params">()</span>{ draw(); }  
 }  
   
